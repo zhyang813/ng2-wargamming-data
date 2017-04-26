@@ -1,3 +1,26 @@
-<h1>
-  {{title}}
-</h1>
+<header>
+  <h1>World of Tanks</h1>
+</header>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+      <li><input type="number" name="level" [(ngModel)]="filter.level" placeholder="Tier"></li>
+      <li><input type="text" name="nation_i18n" [(ngModel)]="filter.nation_i18n" placeholder="Nation"></li>
+      <li><input type="text" name="type_i18n" [(ngModel)]="filter.type_i18n" placeholder="Type"></li>
+      <li><input type="text" name="name_i18n" [(ngModel)]="filter.name_i18n" placeholder="Name"></li>
+    </ul>
+  </div>
+</nav>
+<div class="container">
+	<div class="row" *ngFor = "let tank of tanks| tankfilter: filter"> 
+			<div class="card">
+			  <img class="card-img-top" src={{tank.image}} alt="Card image cap">
+			  <div class="card-block">
+			    <h4 class="card-title">{{tank.name_i18n}}</h4>
+			    <p class="card-text">Nation: {{tank.nation_i18n}}</p>
+			    <p class="card-text">Type: {{tank.type_i18n}}</p>
+			    <p class="card-text">Tier: {{tank.level}}</p>
+			  </div>
+			</div>
+	</div>
+</div>

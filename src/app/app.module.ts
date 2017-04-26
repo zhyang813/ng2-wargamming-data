@@ -4,17 +4,24 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { TanksService } from './service/tanks.service';
+import { TankFilterPipe } from './filter/tank-filter.pipe'
+
+import { AlertModule } from 'ngx-bootstrap';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TankFilterPipe
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    AlertModule.forRoot()
   ],
-  providers: [],
+  providers: [TanksService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
