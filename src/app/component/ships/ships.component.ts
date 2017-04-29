@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { WarService } from '../../service/wargamming.service';
 
 import Ship from '../../ship';
@@ -23,7 +24,6 @@ export class ShipsComponent implements OnInit {
   				array.push(ship[k]);
   			}
   			this.ships = array;
-  			// console.log(array);
   	});
   }
 
