@@ -15,7 +15,8 @@ export class ShipsComponent implements OnInit {
   filter: Ship = new Ship();
 
   constructor(private warService: WarService) {}
-
+  
+  //On app init, load ship data from service 
   ngOnInit() {
   	this.warService.getShips().subscribe(
   		(ship: Ship[]) => {

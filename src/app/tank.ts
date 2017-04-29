@@ -1,5 +1,4 @@
-
- export default class Tank {
+export default class Tank {
 	image: string;
 	name_i18n: string;
 	nation_i18n: string;

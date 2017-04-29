@@ -10,6 +10,8 @@ import Ship from '../ship';
 export class WarService {
 
   constructor(private http: Http) { }
+  
+  //get tank and ship data from wargamming developer API's
 
   getTanks(): Observable<Tank[]> {
   	return this.http.get('https://api.worldoftanks.com/wot/encyclopedia/tanks/?application_id=demo').map(res => res.json().data);

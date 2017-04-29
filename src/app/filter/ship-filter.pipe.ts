@@ -6,6 +6,8 @@ import Ship from '../ship';
 	pure: false
 })
 
+
+//filter pipe for filtering data
 export class ShipFilterPipe implements PipeTransform {
 	transform(items: Ship[], filter: Ship): Ship[] {
 		if (!items || !filter) {
@@ -15,8 +17,8 @@ export class ShipFilterPipe implements PipeTransform {
     return items.filter((item: Ship) => this.applyFilter(item, filter));
 
 	}
-
-	 applyFilter(ship: Ship, filter: Ship): boolean {
+    
+	applyFilter(ship: Ship, filter: Ship): boolean {
     for (let field in filter) {
       if (filter[field]) {
         if (typeof filter[field] === 'string') {

@@ -1,4 +1,4 @@
- export default class Ship {
+export default class Ship {
 	small: string;
 	name: string;
 	nation: string;

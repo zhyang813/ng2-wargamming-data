@@ -9,12 +9,13 @@ import Tank from '../../tank';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-
+  
   tanks: Tank[];
   filter: Tank = new Tank();
 
   constructor(private warService: WarService) {}
-
+  
+  //On app init, load tank data from service 
   ngOnInit() {
   	this.warService.getTanks().subscribe(
   		(tanks: Tank[]) => {
