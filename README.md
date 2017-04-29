@@ -4,6 +4,10 @@ A simple angular 2 application that pulls data from Wargamming developer API for
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.28.3.
 
+## Online
+
+The app is hosted by Heroku. Visit https://obscure-reef-30406.herokuapp.com/
+
 ## Install
 
 ```sh
