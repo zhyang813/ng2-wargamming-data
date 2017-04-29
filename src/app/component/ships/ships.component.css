@@ -1,14 +1,12 @@
-/*header {
-	margin-top: 20px
-	margin-bottom: 20px;
+header {
 	margin: 20px 0;
 }
-*/
-/*h1 {
+
+h1 {
 	margin: 0;
 	padding-left: 5px;
 	color: white;
-}*/
+}
 
 .navbar {
 	margin: 5px;
@@ -28,12 +26,10 @@ li {
 	margin: 5px;
 	display: flex;
 	flex-wrap: wrap;
-	/*background-color: #131212;*/
 	width: 100%;
 }
 
 .row {
-  /*background-color: blue;*/
   margin: auto;
   border: solid;
   margin-bottom: 5px;
@@ -45,8 +41,8 @@ li {
 
 .card {
 	background-color: grey;
-	width: 200px;
-	height: 200px;
+	width: 230px;
+	height: 230px;
 
 	color: white;
 }
